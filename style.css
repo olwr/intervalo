@@ -1,0 +1,115 @@
+@import url('/reset.css');
+
+:root {
+  --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --bg-color: #212121;
+  --font-color: whitesmoke;
+  --focus: 0px 4px 16px 0px rgba(0, 0, 0, 32%);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-family);
+  height: 100vh;
+  background: var(--bg-color);
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  height: 100%;
+  width: 100%;
+}
+
+.show-interval {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.show-interval.none {
+  display: none;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 800;
+}
+
+.text-subject {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #3a9ef0;
+}
+
+.input-div {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.input-div.none {
+  display: none;
+}
+
+.input-subject {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.input-subject label {
+  font-size: 1.6rem;
+}
+
+.input-subject input {
+  font-size: 1.4rem;
+  width: 20rem;
+  padding: .4rem;
+  box-shadow: var(--focus);
+}
+
+.error {
+  display: block;
+  font-size: 1.2rem;
+  color: #ec2c2c;
+}
+
+.error.none {
+  display: none;
+}
+
+button {
+  width: 14%;
+  padding: .6rem;
+  font-family: var(--font-family);
+  font-size: 1.4rem;
+  font-weight: 600;
+  background: transparent;
+  color: var(--font-color);
+  border-radius: 8px;
+  box-shadow: var(--focus);
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--font-color);
+  color: var(--bg-color);
+}
+
+footer {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
