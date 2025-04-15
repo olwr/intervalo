@@ -10,30 +10,31 @@
 </head>
 
 <body>
-
   <main>
     <h1>Intervalo da Aula:</h1>
 
     <div class="show-interval none">
-  
       <h2 class="text-subject"></h2>
 
-      <p>Das 20:40 às 21h</p>
+      <p class="timer"></p>
     </div>
-    
     
     <div class="input-div">
       <div class="input-subject">
         <label for="subject">Digite o nome da aula:</label>
         <input type="text" name="subject" id="name-subject" />
-        
       </div>
 
-      <p class="error none">Por favor, preencha com o nome da disciplina</p>
+      <div class="input-time">
+        <label for="time">Digite o tempo do intervalo:</label>
+        <input type="number" name="time" id="time-interval" min="0" max="30" value="20" />
+      </div>
+
+      <p class="error-name none">Por favor, preencha com o nome da disciplina</p>
+      <p class="error-time none">Valor inválido, preencha um valor numérico positivo</p>
     </div>
 
     <button id="interval-btn">Gerar Intervalo</button>
-
   </main>
 
   <footer>

@@ -51,6 +51,10 @@ h1 {
   color: #3a9ef0;
 }
 
+.timer {
+  font-size: 4.2rem;
+}
+
 .input-div {
   margin: 2rem;
   display: flex;
@@ -63,30 +67,37 @@ h1 {
   display: none;
 }
 
-.input-subject {
+.input-subject,
+.input-time {
   display: flex;
+  justify-content: end;
   align-items: center;
   gap: 4rem;
+  width: 100%;
 }
 
-.input-subject label {
+.input-subject label,
+.input-time label {
   font-size: 1.6rem;
 }
 
-.input-subject input {
+.input-subject input,
+.input-time input {
   font-size: 1.4rem;
   width: 20rem;
   padding: .4rem;
   box-shadow: var(--focus);
 }
 
-.error {
+.error-name,
+.error-time {
   display: block;
   font-size: 1.2rem;
   color: #ec2c2c;
 }
 
-.error.none {
+.error-name.none,
+.error-time.none {
   display: none;
 }
 
